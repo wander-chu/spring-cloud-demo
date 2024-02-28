@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/user?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=true
+    username: root
+    password: root123
+
+mybatis:
+  type-aliases-package: com.example.user.model
+  mapper-locations: classpath:mapper/*.xml
+
+mapper:
+  mappers: com.example.user.utils.MyMapper
+  not-empty: false
+  identity: MYSQL
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
