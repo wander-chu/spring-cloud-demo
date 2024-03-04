@@ -7,7 +7,9 @@
 		<module>eureka-server</module>
 		<module>eureka-server</module>
 		<module>user-service</module>
-	</modules>
+		<module>order-service</module>
+        <module>user-client</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

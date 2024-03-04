@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8011
 
 spring:
   application:
@@ -13,6 +13,8 @@ spring:
 mybatis:
   type-aliases-package: com.example.user.model
   mapper-locations: classpath:mapper/*.xml
+  configuration:
+    logImpl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 mapper:
   mappers: com.example.user.utils.MyMapper
@@ -22,4 +24,4 @@ mapper:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8081/eureka/
+      defaultZone: http://localhost:8001/eureka/

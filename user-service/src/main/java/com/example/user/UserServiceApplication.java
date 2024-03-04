@@ -8,8 +8,8 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan(basePackages = {"com.example.user.mapper"})
 @EnableDiscoveryClient
 @SpringBootApplication
-public class UserServerApplication {
+public class UserServiceApplication {
   public static void main(String[] args) {
-    SpringApplication.run(UserServerApplication.class, args);
+    SpringApplication.run(UserServiceApplication.class, args);
   }
 }

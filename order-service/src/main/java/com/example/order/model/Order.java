@@ -1,5 +1,6 @@
 package com.example.order.model;
 
+import com.example.user.User;
 import java.util.Date;
 import javax.persistence.Table;
 
